@@ -54,16 +54,17 @@ body
 .header
 {
 	background: url('../images/isisws-main.jpg');
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
 	background-attachment: fixed;
+	background-position: center center;
 	height: 100vh;
 	color: #fff;
 	text-transform: uppercase;
-
-}
-			/*navbar*/
+}		
+	/*navbar*/
 .navbar-default .navbar-brand{
 	border: 1px solid #fff;
 	color: #fff;
@@ -443,6 +444,21 @@ a .rss:hover{
 .add-item{
 	padding: 20px;
 }
+
+
+@media only screen and (max-width: 767px) {
+	.header{
+		background: url("../images/isisws-main-mobile.jpg");
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center center;
+		color: #fff;
+		text-transform: uppercase;
+	}
+}
+
+
 @media (max-width: 960px){
 	.nav>li{
 		text-align: center;
